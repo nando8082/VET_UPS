@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>editar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="data.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" [(ngModel)]="data.apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Empresa</ion-label>
+      <ion-input type="text" [(ngModel)]="data.empresa"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="data.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="text" [(ngModel)]="data.telefono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Dirección</ion-label>
+      <ion-input type="text" [(ngModel)]="data.direccion"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button (click)="updateDoctor()">Editar</ion-button>
+  <ion-button [routerLink]="[('/listar')]">Cancelar</ion-button>
+</ion-content>

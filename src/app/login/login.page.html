@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label>Correo: </ion-label>
+      <ion-input [(ngModel)]="credenciales.correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contraseña: </ion-label>
+      <ion-input [(ngModel)]="credenciales.password"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button (click)="login()">Login</ion-button>
+  <ion-button [routerLink]="[('/registro')]">Registrar</ion-button>
+</ion-content>

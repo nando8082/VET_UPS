@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listar-citas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let resultado of resultado">
+    <ion-item>
+      <ion-label>Paciente:</ion-label>
+      <ion-label>{{resultado.paciente}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-label>{{resultado.correo}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Teléfono:</ion-label>
+      <ion-label>{{resultado.celular}}</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-button [routerLink]="[('/perfil')]">Regresar</ion-button>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ajustes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Nombre" [(ngModel)]="data.nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Apellido" [(ngModel)]="data.apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Empresa" [(ngModel)]="data.empresa"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Teléfono" [(ngModel)]="data.telefono"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Direccion" [(ngModel)]="data.direccion"></ion-input>
+    </ion-item>
+  </ion-card>
+  
+
+
+
+  <ion-button (click)="crearDoctor()">
+    guardar
+  </ion-button>
+</ion-content>
+
+
